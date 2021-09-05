@@ -1,0 +1,136 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.account {
+  padding: 40px;
+}
+.start {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.start i {
+  font-size: 25px;
+  margin-top: 0px;
+  height: 250px;
+  margin-left: auto;
+}
+
+.start img {
+  border-radius: 50%;
+  width: 250px;
+  margin-left: auto;
+}
+
+input[type="text"],
+select {
+  font-weight: lighter;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #45a049;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: grey;
+}
+.login {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  font-weight: lighter ;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.option {
+  border-top: #2196f3;
+  border-top: groove;
+  display: flex;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.cancel-btn {
+  border: none;
+  color: white;
+  background-color: red;
+  width: 70px;
+  height: 35px;
+}
+
+.forgot {
+  margin-left: auto;
+  
+}
+.fixpw{
+    color: black;
+}

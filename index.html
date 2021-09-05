@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="account">
+      <div class="start">
+        <img
+          src="https://www.w3schools.com/w3images/avatar3.png"
+          alt="avatar"
+        />
+
+        <i class="fa fa-remove"></i>
+      </div>
+
+      <div class="login">
+        <form>
+          <label for="fname">Username</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Enter Username"
+          />
+
+          <label for="pword">Password</label>
+          <input
+            type="text"
+            id="pword"
+            password="password"
+            placeholder="Enter Password"
+          />
+
+          <input type="submit" value="Login" />
+          <br /><br />
+          <div class="check">
+            <label class="container"
+              >Remember me
+              <span class="checkmark"></span>
+              <input type="checkbox" checked="checked" />
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="option">
+        <button class="cancel-btn">Cancel</button>
+        <div class="forgot">
+            Forgot
+          <a class="fixpw" href="#"> Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
